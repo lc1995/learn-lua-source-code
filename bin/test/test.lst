@@ -1,0 +1,99 @@
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: ./test/test.out
+                         ** global header start **
+0000  1B4C7561           header signature: "\27Lua"
+0004  51                 version (major:minor hex digits)
+0005  00                 format (0=official)
+0006  01                 endianness (1=little endian)
+0007  04                 size of int (bytes)
+0008  04                 size of size_t (bytes)
+0009  04                 size of Instruction (bytes)
+000A  08                 size of number (bytes)
+000B  00                 integral (1=integral)
+                         * number type: double
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+                         
+000C                     ** function [0] definition (level 1)
+                         ** start of function **
+000C  11000000           string size (17)
+0010  402E2F746573742F+  "@./test/"
+0018  746573742E6C7561+  "test.lua"
+0020  00                 "\0"
+                         source name: @./test/test.lua
+0021  00000000           line defined (0)
+0025  00000000           last line defined (0)
+0029  00                 nups (0)
+002A  00                 numparams (0)
+002B  02                 is_vararg (2)
+002C  02                 maxstacksize (2)
+                         * code:
+002D  05000000           sizecode (5)
+0031  0A000000           [1] newtable   0   0   0    ; array=0, hash=0
+0035  64000000           [2] closure    1   0        ; 0 upvalues
+0039  09400080           [3] settable   0   256 1    ; "TestFunc"
+003D  1E000001           [4] return     0   2      
+0041  1E008000           [5] return     0   1      
+                         * constants:
+0045  01000000           sizek (1)
+0049  04                 const type 4
+004A  09000000           string size (9)
+004E  5465737446756E63+  "TestFunc"
+0056  00                 "\0"
+                         const [0]: "TestFunc"
+                         * functions:
+0057  01000000           sizep (1)
+                         
+005B                     ** function [0] definition (level 2)
+                         ** start of function **
+005B  00000000           string size (0)
+                         source name: (none)
+005F  03000000           line defined (3)
+0063  05000000           last line defined (5)
+0067  00                 nups (0)
+0068  01                 numparams (1)
+0069  00                 is_vararg (0)
+006A  02                 maxstacksize (2)
+                         * code:
+006B  01000000           sizecode (1)
+006F  1E008000           [1] return     0   1      
+                         * constants:
+0073  00000000           sizek (0)
+                         * functions:
+0077  00000000           sizep (0)
+                         * lines:
+007B  01000000           sizelineinfo (1)
+                         [pc] (line)
+007F  05000000           [1] (5)
+                         * locals:
+0083  01000000           sizelocvars (1)
+0087  05000000           string size (5)
+008B  73656C6600         "self\0"
+                         local [0]: self
+0090  00000000             startpc (0)
+0094  00000000             endpc   (0)
+                         * upvalues:
+0098  00000000           sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+009C  05000000           sizelineinfo (5)
+                         [pc] (line)
+00A0  01000000           [1] (1)
+00A4  05000000           [2] (5)
+00A8  03000000           [3] (3)
+00AC  07000000           [4] (7)
+00B0  07000000           [5] (7)
+                         * locals:
+00B4  01000000           sizelocvars (1)
+00B8  03000000           string size (3)
+00BC  746200             "tb\0"
+                         local [0]: tb
+00BF  01000000             startpc (1)
+00C3  04000000             endpc   (4)
+                         * upvalues:
+00C7  00000000           sizeupvalues (0)
+                         ** end of function **
+
+00CB                     ** end of chunk **

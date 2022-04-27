@@ -1,0 +1,37 @@
+﻿  lapi.c
+  lauxlib.c
+  lbaselib.c
+  lcode.c
+  ldblib.c
+  ldebug.c
+  ldo.c
+  ldump.c
+  lfunc.c
+  lgc.c
+  linit.c
+  liolib.c
+  llex.c
+  lmathlib.c
+  lmem.c
+  loadlib.c
+  lobject.c
+  lopcodes.c
+  loslib.c
+  lparser.c
+  正在编译...
+  lstate.c
+  lstring.c
+  lstrlib.c
+  ltable.c
+  ltablib.c
+  ltm.c
+  luac.c
+  lundump.c
+  lvm.c
+  lzio.c
+  print.c
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 719 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  lua-windows-vs.vcxproj -> E:\learn-lua-source-code\lua-windows-vs\Release\lua-windows-vs.exe

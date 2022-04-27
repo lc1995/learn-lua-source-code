@@ -93,9 +93,6 @@
     <ClCompile Include="src\ltm.c">
       <Filter>资源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\lua.c">
-      <Filter>资源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\lundump.c">
       <Filter>资源文件</Filter>
     </ClCompile>
@@ -106,6 +103,9 @@
       <Filter>资源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\print.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\luac.c">
       <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
